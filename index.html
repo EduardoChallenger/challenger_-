@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Challenger uno</title>
+</head>
+
+<body>
+  
+  <div class="container">
+
+    <div class="principal">
+
+      <div class="logo">
+        <img src="./imagenes/Logo.png" alt="letra a">
+      </div>
+
+      <textarea type="text" class="textarea" name="" id="texto_encriptado" cols="80" rows="21" placeholder="Ingrese el texto." required></textarea>
+
+      <div>
+	<h6>Solo se permite letras en minúsculas y sin acentos.</h6>
+	<div class="botones">
+        <button class="boton" id="boton_encriptar" onclick="encriptar()"><img src="./imagenes/button_encriptar.png" width="200" height="50" alt="boton encriptar"></button>
+        <button class="boton" id="boton_desencriptar" onclick="desencriptar()"><img src="./imagenes/button_desencriptar.png" width="200" height="50" alt="boton desencriptar"></button>
+	</div>
+      </div>
+
+    </div>
+
+    <div class="lado_izquierdo">
+
+      <div class="boy_imagen" >
+        <img src="./imagenes/Muñeco.png" width="300" height="200" alt="hombre"> 
+      </div>
+      <div class="texto_salida">
+        <textarea name="resultado" class="texto_desencriptado" id="texto_desencriptado" rows="7"cols="25" placeholder="NO se encontado ningún mensaje." readonly></textarea>
+      </div>
+     <input class="boton_copiar" id="boton_copiar" onclick="copiar()" type="image" src="./imagenes/button_copied.png" alt="submit" width="200" height="50">
+    </div>
+  </div>
+  
+</body>
+<script src="./script.js"></script>
+</html>
+
+
+<!--Abrir cuenta nueva en github
+  hacer responsive la página>
